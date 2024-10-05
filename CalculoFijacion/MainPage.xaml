@@ -21,7 +21,10 @@
                 Margin="10,0"
                 BackgroundColor="Beige"
                 RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
-                <Grid Margin="0,10" ColumnDefinitions="Auto,*">
+                <Grid
+                    Margin="0,10"
+                    ColumnDefinitions="Auto,*"
+                    IsVisible="false">
                     <Label
                         FontAttributes="Bold"
                         FontSize="20"
@@ -36,11 +39,14 @@
                         FontSize="20"
                         Keyboard="Numeric"
                         Placeholder="Kilos netos"
+                        Text="46"
                         TextColor="Black" />
                 </Grid>
+                <!--  Neto pagado  -->
                 <Grid
                     Grid.Row="1"
                     Margin="0,10"
+                    BackgroundColor="LightCoral"
                     ColumnDefinitions="Auto,*">
                     <Label
                         FontAttributes="Bold"
@@ -57,9 +63,10 @@
                         Keyboard="Numeric"
                         TextColor="Black" />
                 </Grid>
+                <!--  FTDC y Rendimiento  -->
                 <Grid
-                    Grid.Row="2"
                     Margin="0,10"
+                    BackgroundColor="LightBlue"
                     ColumnDefinitions="Auto,*,Auto,*">
                     <Label
                         FontAttributes="Bold"
@@ -90,11 +97,13 @@
                         FontSize="18"
                         TextColor="Black" />
                 </Grid>
+                <!--  Precio Bruto KG  -->
                 <Grid
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Margin="0,10"
-                    ColumnDefinitions="*,*"
-                    RowDefinitions="*,*">
+                    BackgroundColor="LightGreen"
+                    ColumnDefinitions="Auto,*"
+                    HorizontalOptions="CenterAndExpand">
                     <Label
                         FontAttributes="Bold"
                         FontSize="20"
@@ -103,8 +112,8 @@
                         VerticalTextAlignment="Center" />
                     <Label
                         x:Name="LblPrecioBruto"
-                        Grid.Row="1"
-                        FontSize="20"
+                        Grid.Column="1"
+                        FontSize="30"
                         Text="--"
                         TextColor="Black"
                         VerticalTextAlignment="Center" />
@@ -112,14 +121,15 @@
                         Grid.Column="1"
                         FontAttributes="Bold"
                         FontSize="20"
+                        IsVisible="false"
                         Text="Importe Bruto:"
                         TextColor="Black"
                         VerticalTextAlignment="Center" />
                     <Label
                         x:Name="LblImporteBruto"
-                        Grid.Row="1"
                         Grid.Column="1"
                         FontSize="20"
+                        IsVisible="false"
                         Text="--"
                         TextColor="Black"
                         VerticalTextAlignment="Center" />
@@ -128,6 +138,7 @@
                     Grid.Row="4"
                     Margin="0,10"
                     ColumnDefinitions="*,*"
+                    IsVisible="false"
                     RowDefinitions="*,*">
                     <Label
                         FontAttributes="Bold"
@@ -162,6 +173,7 @@
                     Grid.Row="5"
                     Margin="0,10"
                     ColumnDefinitions="*,*"
+                    IsVisible="false"
                     RowDefinitions="*,*">
                     <Label
                         FontAttributes="Bold"
@@ -195,7 +207,8 @@
                 <Grid
                     Grid.Row="6"
                     Margin="0,10"
-                    ColumnDefinitions="Auto,*">
+                    ColumnDefinitions="Auto,*"
+                    IsVisible="false">
                     <Label
                         FontAttributes="Bold"
                         FontSize="20"

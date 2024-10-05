@@ -198,7 +198,7 @@ namespace CalculoFijacion
             LblPto.Text = "--";
             LblFTDC.Text = "--";
             LblReintegro.Text = "--";
-            TxtKgNeto.Text = "";
+            TxtKgNeto.Text = "46";
             TxtNetoPagado.Text = "";
             PicFTDC.SelectedItem = null;
             PicRedimiento.SelectedItem = null;
